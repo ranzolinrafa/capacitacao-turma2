@@ -18,7 +18,7 @@ do resultado mostrado no Figma
 4. Nós vamos avaliar o resultado do seu exercício na sua branch
 
 ## Iremos levar em consideração
-- Fidelizade do resultado em comparação ao Figma
+- Fidelidade do resultado em comparação ao Figma
 - Organização e semântica do HTML
 - Organização do CSS
 - Nomes dados às classes CSS

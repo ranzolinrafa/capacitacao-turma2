@@ -1,1 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline:none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
 /* CSS File */
+body{
+	background: #03414F;
+}
+
+.wraper{
+	z-index: 100;
+	position: relative;
+	width: 400px;
+	margin: 0 auto;
+}
+
+.header{
+	width: 100%;
+}
+
+.logo{
+	display: block;
+	width: 114px;
+	height: 102px;
+	margin: 96px auto 83.2px;
+}
+
+.main{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	color: #DCF9FF;
+}
+
+.login{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	margin-bottom: 17px;
+}
+
+.text1{
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.invalid{
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	color: #FF3737;
+	margin-bottom: 16px;
+	opacity: 0;
+}
+
+.invalid_show{
+	opacity: 1;	
+}
+
+.form_login{
+	width: 400px;
+	height: 60px;
+	background: #1F6878;
+	border-radius: 15px;
+	border: solid 1px;
+	border-color: transparent;
+	font-family: Montserrat;
+	font-size: 18px;
+	line-height: 22px;
+	color: #E5E5E5;
+	box-sizing: border-box;
+}
+
+.form_login_sucess{
+	border-color: #00E778;
+	/*background: #449c6f;*/
+}
+
+.form_login_error{
+	border-color: #FF3737;
+	/*background: #af7181;*/
+}
+
+.form_login::placeholder {
+  color: #E5E5E5;
+}
+
+.form_email{
+	padding-left: 21px;
+	margin-bottom: 32px;
+}
+
+.form_senha{
+	padding-left: 23px;
+	margin-bottom: 22px;
+}
+
+
+.div_chk_recsenha{
+	padding: 0px;
+	margin-bottom: 32px;
+}
+
+.chkbox{
+	font-size: 14px;
+	line-height: 17px;
+	display: inline;
+	width: 200px;
+}
+
+.chk_lembrar{
+	display: none;
+}
+
+.div_chk_lembrar{
+	display: inline-block;
+	vertical-align: sub;
+	margin: 0px 10px 0px 6px;
+	width: 19px;
+	height: 19px;
+	background: #1F6878;
+	border-radius: 4px;
+}
+
+.div_chk_active{
+	background-image: url('img/Vector 1.png'),url('img/Rectangle 3.png');
+ 	background-position: center, center;
+	background-repeat: no-repeat, no-repeat;
+}
+
+.recsenha{
+	display: inline;
+	float: right;
+	width: 200px;
+	text-align: right;
+}
+
+.recsenha_a{
+	font-size: 14px;
+	line-height: 17px;
+	vertical-align: middle;
+	text-decoration-line: none;
+	color: #00E778;
+}
+
+.recsenha_a:hover{
+	text-decoration: underline;
+}
+
+.btn_login{
+	width: 400px;
+	height: 60px;
+	background: #00E778;
+	border-radius: 15px;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #DCF9FF;
+}
+
+.btn_login:hover{
+	cursor: pointer;
+	background: #05D768;
+	box-shadow: 0px 0px 10px 3px rgba(0,30,45,0.5);
+	transition: 1s;
+}
+
+
+
+.footer{
+	background-image: url("img/Bg.png");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+
+	z-index: 1;
+	font-family: Montserrat;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	vertical-align: sub;
+	color: #B1D2DA;
+
+}
+
+.text_footer{
+	position: absolute;
+	bottom: 27px;
+	left: 50%;
+	transform: translateX(-50%);
+}

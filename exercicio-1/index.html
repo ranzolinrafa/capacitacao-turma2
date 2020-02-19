@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Capacitaçao front-end</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Capacitaçao front-end</title>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- SEU CÓDIGO AQUI -->
-  <script src="main.js"></script>
-</body>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="wraper">
+			<header class="header">
+				<img class="logo" src="img/logo.png" alt="logo">
+			</header>
+			<main class="main">
+				<p class="login">Login</p>
+				<p class="text1">Efetue login e descubra a Revolution.</p>
+				<p class="invalid" id="invalid">Ops, e-mail ou senha inválidos!</p>
+				<input class="form_login form_email " type="text" id="email" placeholder="e-mail"><br>
+				<input class="form_login form_senha " type="password" id="senha" placeholder="senha"><br>
+				<div class="div_chk_recsenha">
+					<div class="chkbox">
+						<input type="checkbox" class="chk_lembrar" id="chk_hidden">
+						<div class="div_chk_lembrar" id="checkbox_lembrar"></div><span>lembrar de mim</span></div>
+					<div class="recsenha">
+						<a href="#" class="recsenha_a">esqueceu sua senha?</a>
+					</div>
+				</div>
+				<input type="button" value="Login" class="btn_login" id="btn_login">
+			</main>
+		</div>
+		<footer class="footer">
+			<span class="text_footer">Designed by Cleiton Gonçalves</span>
+		</footer>
+		<script src="main.js"></script>
+	</body>
 </html>

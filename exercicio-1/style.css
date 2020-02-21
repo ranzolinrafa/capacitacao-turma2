@@ -54,6 +54,7 @@ table {
 
 /* CSS File */
 body{
+	
 	background: #03414F;
 }
 
@@ -65,6 +66,7 @@ body{
 }
 
 .header{
+
 	width: 100%;
 }
 
@@ -107,6 +109,7 @@ body{
 }
 
 .invalid_show{
+
 	opacity: 1;	
 }
 
@@ -120,8 +123,9 @@ body{
 	font-family: Montserrat;
 	font-size: 18px;
 	line-height: 22px;
-	color: #E5E5E5;
 	box-sizing: border-box;
+	color: #E5E5E5;
+  	caret-color: transparent;
 }
 
 .form_login_sucess{
@@ -135,12 +139,8 @@ body{
 }
 
 .form_login::placeholder {
-  color: #E5E5E5;
-}
 
-.form_email{
-	padding-left: 21px;
-	margin-bottom: 32px;
+	color: #E5E5E5;
 }
 
 .form_senha{
@@ -148,6 +148,20 @@ body{
 	margin-bottom: 22px;
 }
 
+.form_senha_c{
+	font-weight: bold;
+	font-size: 71px;
+	line-height: 20px;
+	letter-spacing:3px;
+	color: #B1D2DA;
+	padding-left: 22px; 
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.form_email{
+	padding-left: 21px;
+	margin-bottom: 32px;
+}
 
 .div_chk_recsenha{
 	padding: 0px;
@@ -162,6 +176,7 @@ body{
 }
 
 .chk_lembrar{
+
 	display: none;
 }
 
@@ -197,6 +212,7 @@ body{
 }
 
 .recsenha_a:hover{
+
 	text-decoration: underline;
 }
 
@@ -220,8 +236,6 @@ body{
 	transition: 1s;
 }
 
-
-
 .footer{
 	background-image: url("img/Bg.png");
 	background-position: bottom;
@@ -241,7 +255,6 @@ body{
 	text-align: center;
 	vertical-align: sub;
 	color: #B1D2DA;
-
 }
 
 .text_footer{

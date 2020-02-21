@@ -5,15 +5,39 @@ var forms = document.getElementsByClassName('form_login');
 var invalid = document.getElementById('invalid');
 var checkbox = document.getElementById('checkbox_lembrar');
 var chk_hidden = document.getElementById('chk_hidden');
+var formSenha = document.getElementById('senha');
+var formEmail = document.getElementById('email');
 
 
 for (i = 0; i < forms.length; i++) {
-	forms[i].addEventListener('keyup', function(event){
+	forms[i].addEventListener('keydown', function(event){
 		event.target.classList.remove('form_login_error');
 		event.target.classList.remove('form_login_sucess');
 		invalid.classList.remove('invalid_show');
 	});
 }
+
+formEmail.addEventListener('focusin', function(event){
+	formEmail.setAttribute("placeholder", "");
+});
+
+formEmail.addEventListener('focusout', function(event){
+	if (formEmail.value.length === 0) {
+		formEmail.setAttribute("placeholder", "e-mail");
+	}
+});
+
+formSenha.addEventListener('focusin', function(event){
+	formSenha.setAttribute("placeholder", "");
+	formSenha.classList.add('form_senha_c');
+});
+
+formSenha.addEventListener('focusout', function(event){
+	if (formSenha.value.length === 0) {
+		formSenha.classList.remove('form_senha_c');
+		formSenha.setAttribute("placeholder", "senha");
+	}
+});
 
 login.addEventListener('click', function(event){
 	var flagInvalid = 0;
